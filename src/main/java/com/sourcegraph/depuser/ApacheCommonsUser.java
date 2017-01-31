@@ -1,19 +1,15 @@
 package com.sourcegraph.depuser;
 
-import com.sun.xml.internal.messaging.saaj.util.ByteInputStream;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.input.BOMInputStream;
 import org.apache.commons.io.output.ChunkedWriter;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.math.BigInteger;
 
 public class ApacheCommonsUser {
     public void callBOMInputStream() throws IOException {
-        BOMInputStream bomInputStream = new BOMInputStream(new ByteInputStream());
+        BOMInputStream bomInputStream = new BOMInputStream(new FileInputStream("somefile"));
         bomInputStream.getBOM();
         bomInputStream.close();
     }
