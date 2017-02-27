@@ -3,12 +3,11 @@ package com.sourcegraph.depuser;
 import com.google.common.base.Function;
 import com.google.common.base.Joiner;
 import com.google.common.base.Strings;
-import com.google.common.collect.BiMap;
-import com.google.common.collect.HashBiMap;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
+import com.google.common.collect.*;
+import dagger.Module;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class GuavaUser {
@@ -34,5 +33,10 @@ public class GuavaUser {
 
     public void useBiMap() {
         BiMap<String, String> b = HashBiMap.create();
+    }
+
+    public void useMaps() {
+        HashMap<Object, Object> m = Maps.newHashMap();
+        Module n = null;
     }
 }
