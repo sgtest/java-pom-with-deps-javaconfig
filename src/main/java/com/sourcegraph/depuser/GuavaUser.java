@@ -3,6 +3,8 @@ package com.sourcegraph.depuser;
 import com.google.common.base.Function;
 import com.google.common.base.Joiner;
 import com.google.common.base.Strings;
+import com.google.common.collect.BiMap;
+import com.google.common.collect.HashBiMap;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 
@@ -28,5 +30,9 @@ public class GuavaUser {
                     }
                 }
         );
+    }
+
+    public void useBiMap() {
+        BiMap<String, String> b = HashBiMap.create();
     }
 }
