@@ -48,5 +48,11 @@
       <artifactId>jersey-rx-client-guava</artifactId>
       <version>2.23</version>
     </dependency>
+    <dependency>
+      <!-- Dependency to artifact that exists at https://bintray.com/sourcegraph/simple, but not Maven Central -->
+      <groupId>com.sourcegraph</groupId>
+      <artifactId>simple</artifactId>
+      <version>1.0.1</version>
+    </dependency>
   </dependencies>
 </project>
