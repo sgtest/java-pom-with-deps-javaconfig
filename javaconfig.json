@@ -1,0 +1,40 @@
+{
+  "sourceDirectory" : "src/main/java",
+  "dependencies": [{
+    "groupId": "com.google.guava",
+    "artifactId": "guava",
+    "version": "21.0"
+  }, {
+    "groupId": "org.apache.logging.log4j",
+    "artifactId": "log4j-core",
+    "version": "2.8"
+  }, {
+    "groupId": "commons-io",
+    "artifactId": "commons-io",
+    "version": "2.5"
+  }, {
+    "groupId": "com.google.dagger",
+    "artifactId": "dagger-compiler",
+    "version": "2.10-rc1"
+  }, {
+    "groupId": "net.sf.json-lib",
+    "artifactId": "json-lib",
+    "version": "2.4"
+  }, {
+    "groupId": "com.palominolabs.metrics",
+    "artifactId": "metrics-guice",
+    "version": "3.2.0"
+  }, {
+    "groupId": "org.glassfish.jersey.ext.rx",
+    "artifactId": "jersey-rx-client",
+    "version": "2.23"
+  }, {
+    "groupId": "org.glassfish.jersey.ext.rx",
+    "artifactId": "jersey-rx-client-guava",
+    "version": "2.23"
+  }, {
+    "groupId": "com.sourcegraph",
+    "artifactId": "simple",
+    "version": "1.0.1"
+  }]
+}
